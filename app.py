@@ -320,7 +320,33 @@ if analyze_button:
         else:
 
             st.session_state["waste_result"] = result
-    # =========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# =========================================================
 # SMART RESULT
 # =========================================================
 
@@ -342,6 +368,11 @@ if "waste_result" in st.session_state:
     )
 
     st.subheader("Waste Classification")
+
+    # Analysis source
+    st.caption(
+        f"Analysis source: {result.get('source', 'AI System')}"
+    )
 
     st.write(
         "The following information has been generated "
@@ -455,6 +486,7 @@ if "waste_result" in st.session_state:
         )
     )
 
+
 # =========================================================
 # CAPABILITIES
 # =========================================================
@@ -479,6 +511,53 @@ st.write(
     "waste management information to help users understand "
     "appropriate segregation and disposal methods."
 )
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 feature1, feature2, feature3 = st.columns(3, gap="medium")
